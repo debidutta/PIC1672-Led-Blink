@@ -1,6 +1,6 @@
 #include<htc.h>
 #include<pic.h>
-#define _XTAL_FREQ 8000000
+#define _XTAL_FREQ 4000000
 
 //Configure i/o port connection
 #define SEVENSEG_TRIS TRISB
@@ -107,7 +107,7 @@ void SevenSegISR()
 
    */
 
-   TMR0=150;
+   TMR0=50;
 
    static int i;
 
